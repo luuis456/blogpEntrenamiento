@@ -1,0 +1,157 @@
+Last login: Sat Dec  9 11:00:40 on ttys000
+luisangelsaenzdelao@MacBook-Air-de-Luis ~ % 
+luisangelsaenzdelao@MacBook-Air-de-Luis ~ % ls
+Desktop		Documents	Downloads	Library		Movies		Music		Pictures	Public
+luisangelsaenzdelao@MacBook-Air-de-Luis ~ % cd Desktop 
+luisangelsaenzdelao@MacBook-Air-de-Luis Desktop % ls
+Consejos de chat gpt .docx				Trabajo
+Curso git						Youtube
+Importante 						blobsaver-arm-3.6.0.dmg
+Necesidades basicas Documento Final Oficial.docx	~$Reestructurar ideas Importante.xlsx
+Reestructurar ideas Importante.xlsx			~$cesidades basicas Documento Final Oficial.docx
+luisangelsaenzdelao@MacBook-Air-de-Luis Desktop % cd Curso\ git 
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % ls
+Articulo.html	CSS		Imagenes	historia.txt
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % git branch header
+fatal: a branch named 'header' already exists
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % git push origin header
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 147.96 KiB | 36.99 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'header' on GitHub by visiting:
+remote:      https://github.com/luuis456/blogentrenamiento/pull/new/header
+remote: 
+To https://github.com/luuis456/blogentrenamiento.git
+ * [new branch]      header -> header
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % git commit -am "color de fondo nuevo e imagen de fondo"
+
+[header 2382f1f] color de fondo nuevo e imagen de fondo
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % 
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % git status
+On branch header
+nothing to commit, working tree clean
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % git checkout main  
+Switched to branch 'main'
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % git checkout header
+error: Your local changes to the following files would be overwritten by checkout:
+	.DS_Store
+Please commit your changes or stash them before you switch branches.
+Aborting
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % git checkout header
+error: Your local changes to the following files would be overwritten by checkout:
+	.DS_Store
+Please commit your changes or stash them before you switch branches.
+Aborting
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % git checkout main  
+M	.DS_Store
+Already on 'main'
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % git checkout header
+error: Your local changes to the following files would be overwritten by checkout:
+	.DS_Store
+Please commit your changes or stash them before you switch branches.
+Aborting
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % git commit "otro mas"
+error: pathspec 'otro mas' did not match any file(s) known to git
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % git checkout header  
+error: Your local changes to the following files would be overwritten by checkout:
+	.DS_Store
+Please commit your changes or stash them before you switch branches.
+Aborting
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % git add .DS_Store  # Agrega el archivo modificado
+git commit -m "Mensaje de commit"  # Confirma los cambios
+
+fatal: pathspec '#' did not match any files
+error: pathspec '#' did not match any file(s) known to git
+error: pathspec 'Confirma' did not match any file(s) known to git
+error: pathspec 'los' did not match any file(s) known to git
+error: pathspec 'cambios' did not match any file(s) known to git
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % git add .DS_Store 
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % git commit -m "otro cambio"
+[main 67eea3c] otro cambio
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % git checkout heade
+error: pathspec 'heade' did not match any file(s) known to git
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % git checkout header
+error: Your local changes to the following files would be overwritten by checkout:
+	.DS_Store
+Please commit your changes or stash them before you switch branches.
+Aborting
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % git stach
+git: 'stach' is not a git command. See 'git --help'.
+
+The most similar command is
+	stash
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % git stash
+Saved working directory and index state WIP on main: 67eea3c otro cambio
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % git checkout -- .DS_Store 
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % git checkout header
+Switched to branch 'header'
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % git checkout main        
+error: Your local changes to the following files would be overwritten by checkout:
+	.DS_Store
+Please commit your changes or stash them before you switch branches.
+Aborting
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % git checkout main
+error: Your local changes to the following files would be overwritten by checkout:
+	.DS_Store
+Please commit your changes or stash them before you switch branches.
+Aborting
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % git checkout header      
+M	.DS_Store
+Already on 'header'
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % git checkout main  
+error: Your local changes to the following files would be overwritten by checkout:
+	.DS_Store
+Please commit your changes or stash them before you switch branches.
+Aborting
+luisangelsaenzdelao@MacBook-Air-de-Luis Curso git % nano .gitignore
+
+  UW PICO 5.09                                                   File: .gitignore                                                    Modified  
+
+.DS_Store         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^G Get Help            ^O WriteOut            ^R Read File           ^Y Prev Pg             ^K Cut Text            ^C Cur Pos             
+^X Exit                ^J Justify             ^W Where is            ^V Next Pg             ^U UnCut Text          ^T To Spell            
